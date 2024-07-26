@@ -2,7 +2,7 @@ import sqlite3
 import time
 import logging
 import os
-from tabulate import tabulate
+from tabulate import tabulate # type: ignore
 
 
 # Function to set up logging
@@ -14,10 +14,10 @@ def setup_logging(logfile):
     os.makedirs(os.path.abspath(os.path.join("logs")), exist_ok=True)
     
     logging.basicConfig(
-        filename=logfile,
-        level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S"
+        filename = logfile,
+        level = logging.INFO,
+        format = "%(asctime)s - %(levelname)s - %(message)s",
+        datefmt = "%Y-%m-%d %H:%M:%S"
     )
     
     logging.info("Logging setup complete.")
@@ -39,7 +39,7 @@ def setup_sqlite():
     
     cursor = conn.cursor()
     
-    return conn, cursor
+    return conn, cursor, db_path
 
 
 # Function to execute SQL from a file and return results

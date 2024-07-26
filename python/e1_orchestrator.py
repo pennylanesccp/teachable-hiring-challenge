@@ -11,7 +11,7 @@ def main():
 
     # Set up SQLite database connection
     
-    conn, cursor = setup_sqlite()
+    conn, cursor, db_path = setup_sqlite()
     
     try:
 
@@ -20,7 +20,7 @@ def main():
         create_tables(cursor, "e1")
         
         insert_data(cursor, "e1")
-                
+        
         # Fetch and format results
         
         results = "Exercise 1)\n"

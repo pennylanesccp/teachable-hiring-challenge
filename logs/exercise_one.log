@@ -1,0 +1,7 @@
+2024-07-25 22:51:49 - INFO - Logging setup complete.
+2024-07-25 22:51:50 - INFO - Create Tables executed in 0.047125 seconds
+2024-07-25 22:51:50 - INFO - Insert Data executed in 0.000000 seconds
+2024-07-25 22:51:50 - INFO - Execute e1_q1 executed in 0.000000 seconds
+2024-07-25 22:51:50 - INFO - Execute e1_q2 executed in 0.015096 seconds
+2024-07-25 22:51:50 - INFO - Database setup and query execution completed successfully.
+2024-07-25 22:51:50 - INFO - Database connection closed.
