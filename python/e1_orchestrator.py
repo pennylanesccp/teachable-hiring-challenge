@@ -11,7 +11,7 @@ def main():
 
     # Set up SQLite database connection
     
-    conn, cursor, db_path = setup_sqlite()
+    conn, cursor = setup_sqlite()
     
     try:
 

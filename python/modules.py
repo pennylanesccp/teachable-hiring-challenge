@@ -39,7 +39,7 @@ def setup_sqlite():
     
     cursor = conn.cursor()
     
-    return conn, cursor, db_path
+    return conn, cursor
 
 
 # Function to execute SQL from a file and return results
